@@ -1,0 +1,14 @@
+{
+  "name": "webgl-fundamentals",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "npx concurrently \"bun --hot run index.ts\" \"npx tsc --watch square.ts --outDir dist\""
+  }
+}
